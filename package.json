@@ -1,14 +1,20 @@
 {
-  "private": true,
+  "name": "dadjokes.tech",
   "version": "1.0.0",
-  "name": "learnwithjason-demo-base",
-  "author": "Jason Lengstorf <jason@lengstorf.com>",
+  "description": "Hi! This repo is for a fun bit of HTML, CSS and JS I wrote to show a funny tech related **Dad Joke**.",
+  "main": "main.js",
   "scripts": {
-    "dev": "eleventy --serve",
-    "build": "eleventy"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garyb1/dadjokes.tech.git"
   },
-  "license": "MIT"
+  "keywords": ["dad jokes", "tech jokes", "CSSS", "HTML", "JS"],
+  "author": "Gary Byrne <garypaulbyrne1995@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garyb1/dadjokes.tech/issues"
+  },
+  "homepage": "https://github.com/garyb1/dadjokes.tech#readme"
 }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+  
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+  
+    <title>Dad Jokes</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jwa3agu.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta name="theme-color" content="#fafafa">
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <h1 class="visually-hidden">DadJokes.tech</h1>
+      <div class="logo-wrapper">
+        <a href="/" class="logo"
+          ><img src="/images/logo.png" alt="Dadjokes.tech logo"
+        /></a>
+      </div>
+    </header>
+    <main class="main" role="main" tabindex="-1">
+      <div class="wrapper">
+          <div class="img">
+            <img src="/images/super_dad.svg" alt="">
+          </div>
+          <div class="content">
+            <dl>
+                <dt><span id="question"></span></dt>
+                <dd><span id="answer"></span></dd> 
+            </dl>
+          </div>
+      </div>
+      <div class="next">
+        <button class="btn next--btn">Next Joke</button>
+      </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <p>A website by <a href="https://www.github.com/garyb1"><span>Gary Byrne</span></a>
+        showcasing an <span aria-hidden="true">[</span>array<span aria-hidden="true">]</span> of dad 
+        jokes for developers. Thanks to <a href="https://github.com/wesbos/dad-jokes"><em>Wes Bos</em></a> for the jokes.
+      </p>
+      
+      <ul role="list" aria-label="Social Icons">
+          <li>
+            <a href="https://github.com/garyb1" aria-label="Github Code">
+              <img src="/images/icons/github.svg" alt="" class="github">
+            </a>
+          </li> 
+
+          <li>
+            <a href="https://twitter.com/garybyrne1995" aria-label="Twitter">
+              <img src="/images/icons/twitter.svg" alt="" class="twitter">
+            </a>
+          </li>
+
+          <li>
+            <a href="https://codepen.io/garyb1" aria-label="Codepen">
+              <img src="/images/icons/codepen.svg" alt="" class="codepen">
+            </a>
+          </li>
+
+          <li>
+            <a href="https://youtube.com/channel/UC8TZPGDUP4AEPX1uGRDFPyg" aria-label="Youtube">
+              <img src="/images/icons/yt.svg" alt="" class="youtube">
+            </a>
+          </li>
+      </ul>
+    </footer>
+    
+    <script src="./main.js"></script>
+  </body>
+</html>
+
+
