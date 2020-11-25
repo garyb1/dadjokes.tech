@@ -28,7 +28,8 @@ export default [
       "Yes."
     ],
     [
-      "I’ve been hearing news about this big boolean.Huge if true."
+      "I’ve been hearing news about this big boolean.",
+      "Huge if true."
     ],
     [
       "What diet did the ghost developer go on?",
@@ -107,7 +108,8 @@ export default [
       "A terminal illness!"
     ],
     [
-      "I never tell the same joke twiceI have a DRY sense of humor."
+      "I never tell the same joke twice",
+      "I have a DRY sense of humor."
     ],
     [
       "Why was the computer freezing?",
@@ -134,7 +136,8 @@ export default [
       "Lots of memory!"
     ],
     [
-      "Java truly is an OOP language...As in: OOPs I used Java!"
+      "Java truly is an OOP language...",
+      "As in: OOPs I used Java!"
     ],
     [
       "How do programming pirates pass method parameters?",
@@ -292,13 +295,16 @@ export default [
       "They rotate the logs."
     ],
     [
-      "I've got a great UDP joke but I'm afraid you wouldn't get it..."
+      "I've got a great UDP joke",
+      "but I'm afraid you wouldn't get it..."
     ],
     [
-      "A programmer was arrested for writing unreadable code. They refused to comment."
+      "A programmer was arrested for writing unreadable code.",
+      "They refused to comment."
     ],
     [
-      "There are 10 types of people in this world, those who understand binary and those who don't."
+      "There are 10 types of people in this world",
+      "Those who understand binary and those who don't."
     ],
     [
       "Why do all HTML emails get blocked?",
@@ -385,9 +391,6 @@ export default [
       "psycoPG13"
     ],
     [
-      "The next time you're using Safari or Firefox and it's running slowly, you can say to yourself, \"[I could've had a V8](https://www.youtube.com/watch?v=ld8eAH0MW00)\"."
-    ],
-    [
       "What accommodations did the JavaScript developer request at the hotel?",
       "A room with a Vue."
     ],
@@ -445,10 +448,10 @@ export default [
       "Why do developers use mechanical keyboards?", "To strongly type their code."
     ],
     [
-      "A new database query walks into a bar.The server says \"Sorry, cache only.\""
+      "A new database query walks into a bar.", "The server says \"Sorry, cache only.\""
     ],
     [
-      "What's the best tool for automatically ignoring long email threads about tech buzzwords?\"Block-chain\""
+      "What's the best tool for automatically ignoring long email threads about tech buzzwords?", "\"Block-chain\""
     ],
     [
       "What is a developer's favorite country song?", "Hello World - by Lady Antebellum"
@@ -477,9 +480,6 @@ export default [
     [
       "What do you call optimistic front-end developers?",
       "Stack half-full developers."
-    ],
-    [
-      "Chuck Norris can take a screenshot of his blue screen."
     ],
     [
       "Have you heard the one about the Corduroy pillow?",
@@ -519,7 +519,8 @@ export default [
       "I went to a street where the houses were numbered 8k, 16k, 32k, 64k, 128k, 256k and 512k.It was a trip down Memory Lane."
     ],
     [
-      "Lisp programmers don't make prank calls. They make FUNCALLs"
+      "Lisp programmers don't make prank calls.",
+      "They make FUNCALLs"
     ],
     [
       "Why do Front-End Developers eat lunch alone?", "Because, they don't know how to join tables."
