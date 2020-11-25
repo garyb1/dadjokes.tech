@@ -2,19 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Dadjokes.tech</title>
+    <meta name="title" content="Dadjokes.tech">
+    <meta name="description" content="A fun website showing tech related dad jokes that will make you laugh. ">
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-  
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="dadjokes.tech">
+    <meta property="og:title" content="Dadjokes.tech">
+    <meta property="og:description" content="A fun website showing tech related dad jokes that will make you laugh. ">
+    <meta property="og:image" content="/images/super_dad.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="dadjokes.tech/">
+    <meta property="twitter:title" content="Dadjokes.tech">
+    <meta property="twitter:description" content="A fun website showing tech related dad jokes that will make you laugh. ">
+    <meta property="twitter:image" content="/images/super_dad.jpg">
+        
     <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="logo.jpg">
   
-    <title>Dad Jokes</title>
     <link rel="stylesheet" href="https://use.typekit.net/jwa3agu.css" />
     <link rel="stylesheet" href="/styles.css" />
     <meta name="theme-color" content="#fafafa">
@@ -34,7 +43,8 @@
             <img src="/images/super_dad.svg" alt="">
           </div>
           <div class="content">
-            <dl>
+            <h2 class="visually-hidden">Dad Joke</h2>
+            <dl aria-live="polite">
                 <dt><span id="question"></span></dt>
                 <dd><span id="answer"></span></dd> 
             </dl>
@@ -77,7 +87,6 @@
           </li>
       </ul>
     </footer>
-    
     <script src="./main.js"></script>
   </body>
 </html>
