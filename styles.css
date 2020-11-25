@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Box sizing rules */
 *,
 *::before,
 *::after {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -39,6 +47,7 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
+	-webkit-text-decoration-skip: ink;
 	text-decoration-skip-ink: auto;
 }
 
@@ -62,8 +71,12 @@ select {
 	*,
 	*::before,
 	*::after {
+		-webkit-animation-duration: 0.01ms !important;
 		animation-duration: 0.01ms !important;
+		-webkit-animation-iteration-count: 1 !important;
 		animation-iteration-count: 1 !important;
+		-webkit-transition-duration: 0.01ms !important;
+		-o-transition-duration: 0.01ms !important;
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
 	}
@@ -121,9 +134,15 @@ main:focus {
 }
 
 .header .logo-wrapper {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 56px;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 0 1rem;
 	position: relative;
@@ -138,6 +157,7 @@ main:focus {
 
 .visually-hidden {
 	clip: rect(0 0 0 0);
+	-webkit-clip-path: inset(50%);
 	clip-path: inset(50%);
 	height: 1px;
 	overflow: hidden;
@@ -147,8 +167,13 @@ main:focus {
 }
 
 .wrapper {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	padding-top: 1rem;
 	width: 90%;
@@ -157,7 +182,11 @@ main:focus {
 
 .content {
 	min-width: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -196,15 +225,27 @@ dd:before {
 /* next joke button */
 
 .next {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	width: 100%;
 }
 
 .btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	background-color: transparent;
 	width: 400px;
@@ -232,9 +273,18 @@ dd:before {
 
 footer {
 	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin-top: -1rem;
 }
@@ -256,11 +306,16 @@ em {
 
 [role="list"] {
 	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 50%;
 	margin: 1em 0 0 0;
 	padding: 0;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -278,7 +333,11 @@ footer a {
 
 @media (prefers-reduced-motion) {
 	.footer img:hover {
+		-webkit-transition: all 0.3s ease-in;
+		-o-transition: all 0.3s ease-in;
 		transition: all 0.3s ease-in;
+		-webkit-transform: scale(1.1) rotate(360deg);
+		-ms-transform: scale(1.1) rotate(360deg);
 		transform: scale(1.1) rotate(360deg);
 	}
 }
@@ -295,26 +354,27 @@ footer a {
 	}
 }
 
-@media (max-width: 900px) {
-	html {
-		font-size: 0.85rem;
-	}
-}
-
 @media (max-width: 600px) {
-	html {
-		font-size: 0.75rem;
+	main {
+		background-image: url("./images/super_dad_opaque.svg");
+		background-size: 30%;
+		background-repeat: no-repeat;
+		background-position: top right;
 	}
 	.wrapper {
 		width: 95vw;
 		margin: 0 0.5rem;
 	}
-	.wrapper img {
-		width: 75%;
-		display: flex;
+	.img {
+		display: none;
 	}
 	.content {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
+		-webkit-box-align: start;
+		-ms-flex-align: start;
 		align-items: flex-start;
 	}
 	.btn {
@@ -329,11 +389,15 @@ footer a {
 }
 
 @media (max-width: 400px) {
+	html {
+		font-size: 0.85rem;
+	}
 	main {
 		margin: 0;
 		padding: 0;
 		width: 90%;
-		height: 70vh;
+		height: 50vh;
+		background: none;
 	}
 	.img {
 		display: none;
