@@ -89,10 +89,8 @@ body {
 	font-family: var(--font-family);
 	font-weight: 400;
 	margin: 0;
-}
-
-body {
 	min-height: 100vh;
+	width: 100vw;
 	padding-top: 0.5rem;
 	background-image: url("/images/field.svg");
 	background-size: contain;
@@ -107,6 +105,10 @@ h5,
 h6 {
 	color: var(--black);
 	font-weight: 900;
+}
+
+main {
+	width: 100vw;
 }
 
 main:focus {
@@ -159,12 +161,7 @@ main:focus {
 	align-items: center;
 }
 
-.joke {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-width: 100%;
-}
+/* definition list for question */
 
 dt,
 dd {
@@ -195,6 +192,8 @@ dt:before {
 dd:before {
 	content: "ANSWER";
 }
+
+/* next joke button */
 
 .next {
 	display: flex;
@@ -240,12 +239,8 @@ footer {
 	margin-top: -1rem;
 }
 
-footer a {
-	text-decoration: none;
-	color: currentColor;
-}
-
-footer p, footer span {
+footer p,
+footer span {
 	font-size: 0.9em;
 }
 
@@ -269,10 +264,17 @@ em {
 	align-items: center;
 }
 
+footer a {
+	text-decoration: none;
+	color: currentColor;
+}
+
 .footer img {
 	width: 3rem;
 	height: 2rem;
 }
+
+/* media queries */
 
 @media (prefers-reduced-motion) {
 	.footer img:hover {
@@ -281,15 +283,9 @@ em {
 	}
 }
 
-/* media queries */
-}
-
 @media (min-width: 1300px) {
 	html {
 		font-size: 1.1rem;
-	}
-	main {
-		min-height: auto;
 	}
 	footer {
 		margin-top: 4rem;
@@ -309,9 +305,6 @@ em {
 	html {
 		font-size: 0.75rem;
 	}
-	main {
-		width: 100vw;
-	}
 	.wrapper {
 		width: 95vw;
 		margin: 0 0.5rem;
@@ -327,7 +320,7 @@ em {
 	.btn {
 		width: 400px;
 		margin-left: 0;
-		margin-top: 1rem;
+		margin-top: 3rem;
 	}
 
 	footer {
@@ -336,13 +329,25 @@ em {
 }
 
 @media (max-width: 400px) {
+	main {
+		margin: 0;
+		padding: 0;
+		width: 90%;
+		height: 70vh;
+	}
 	.img {
 		display: none;
 	}
 
+	[role="list"] {
+		width: 90%;
+	}
+
 	.btn {
 		margin-top: 3rem;
-		width: 100%;
+		width: 80%;
+		margin-left: 0;
+		margin-right: 0;
 		margin-bottom: 0;
 	}
 }
